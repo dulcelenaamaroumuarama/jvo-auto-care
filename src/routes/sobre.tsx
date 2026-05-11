@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { Heart, Eye, Award } from "lucide-react";
-import glauko from "@/assets/glauko.jpg";
+import glauko from "@/assets/glauko.png";
 import { Section, SectionHeader } from "@/components/site/Section";
 
 export const Route = createFileRoute("/sobre")({
