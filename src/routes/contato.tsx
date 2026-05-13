@@ -10,10 +10,14 @@ import { ADDRESS, HOURS, PHONE_DISPLAY, TEL_URL, WHATSAPP_URL, MAP_EMBED, MAP_LI
 export const Route = createFileRoute("/contato")({
   head: () => ({
     meta: [
-      { title: "Contato — JVO Auto-Serviços" },
-      { name: "description", content: "Fale com a JVO Auto-Serviços em Umuarama-PR. WhatsApp, telefone, formulário e mapa." },
-      { property: "og:title", content: "Contato — JVO Auto-Serviços" },
-      { property: "og:description", content: "Agende seu serviço, peça orçamento ou tire dúvidas." },
+      { title: "Contato — Oficina Mecânica em Umuarama-PR | JVO" },
+      { name: "description", content: "Mecânico perto de você em Umuarama-PR. Fale com a JVO Auto-Serviços pelo WhatsApp, telefone ou formulário. Zona V, fácil acesso." },
+      { property: "og:title", content: "Contato — Oficina Mecânica em Umuarama-PR | JVO" },
+      { property: "og:description", content: "Agende seu serviço, peça orçamento ou tire dúvidas com a JVO Auto-Serviços em Umuarama-PR." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/contato" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/contato" },
     ],
   }),
   component: ContatoPage,

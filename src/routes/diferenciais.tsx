@@ -5,10 +5,14 @@ import { Section, SectionHeader } from "@/components/site/Section";
 export const Route = createFileRoute("/diferenciais")({
   head: () => ({
     meta: [
-      { title: "Diferenciais — JVO Auto-Serviços" },
-      { name: "description", content: "Por que escolher a JVO: experiência, transparência, atendimento familiar e especialistas em leilão." },
-      { property: "og:title", content: "Diferenciais — JVO Auto-Serviços" },
-      { property: "og:description", content: "Conheça os diferenciais que tornam a JVO única em Umuarama-PR." },
+      { title: "Por que escolher nossa oficina mecânica em Umuarama | JVO" },
+      { name: "description", content: "Procurando mecânico perto de você em Umuarama-PR? Conheça os diferenciais da JVO: 25+ anos de experiência, transparência, parcelamento em 4x e especialistas em leilão." },
+      { property: "og:title", content: "Por que escolher nossa oficina mecânica em Umuarama | JVO" },
+      { property: "og:description", content: "Experiência, transparência e atendimento familiar na sua oficina mecânica em Umuarama-PR." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/diferenciais" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/diferenciais" },
     ],
   }),
   component: DiferenciaisPage,
