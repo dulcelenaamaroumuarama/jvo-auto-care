@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 import logo from "@/assets/logo-jvo.png";
 import { ADDRESS, HOURS, PHONE_DISPLAY, TEL_URL, MAP_EMBED } from "@/lib/contact";
+import { SocialCard } from "@/components/site/SocialCard";
 
 export function Footer() {
   return (
