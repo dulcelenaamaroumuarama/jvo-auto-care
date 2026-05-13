@@ -12,11 +12,15 @@ import g6 from "@/assets/g-auction.jpg";
 export const Route = createFileRoute("/galeria")({
   head: () => ({
     meta: [
-      { title: "Galeria — JVO Auto-Serviços" },
-      { name: "description", content: "Conheça nossa estrutura, equipe e veículos atendidos pela JVO Auto-Serviços." },
-      { property: "og:title", content: "Galeria — JVO Auto-Serviços" },
-      { property: "og:description", content: "Estrutura, equipe e trabalhos realizados." },
+      { title: "Galeria — Estrutura da oficina em Umuarama | JVO Auto-Serviços" },
+      { name: "description", content: "Veja a estrutura, equipe e serviços de mecânica automotiva realizados pela JVO Auto-Serviços, oficina mecânica em Umuarama-PR." },
+      { property: "og:title", content: "Galeria — Oficina Mecânica em Umuarama | JVO" },
+      { property: "og:description", content: "Estrutura, equipe e trabalhos da nossa auto mecânica em Umuarama-PR." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/galeria" },
       { property: "og:image", content: g1 },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/galeria" },
     ],
   }),
   component: GaleriaPage,

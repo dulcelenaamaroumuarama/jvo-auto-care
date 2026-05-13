@@ -9,10 +9,14 @@ import { WHATSAPP_URL } from "@/lib/contact";
 export const Route = createFileRoute("/servicos")({
   head: () => ({
     meta: [
-      { title: "Serviços — JVO Auto-Serviços" },
-      { name: "description", content: "Mecânica geral, preventiva, corretiva, freios, suspensão, elétrica, injeção e avaliação para leilão em Umuarama-PR." },
-      { property: "og:title", content: "Serviços — JVO Auto-Serviços" },
-      { property: "og:description", content: "Tudo o que seu veículo precisa em um só lugar." },
+      { title: "Serviços de Mecânica Automotiva em Umuarama | JVO" },
+      { name: "description", content: "Auto mecânica completa em Umuarama-PR: mecânica geral, preventiva, corretiva, freios, suspensão, elétrica, injeção eletrônica e avaliação para leilão." },
+      { property: "og:title", content: "Serviços de Mecânica Automotiva em Umuarama | JVO" },
+      { property: "og:description", content: "Centro automotivo multimarcas. Tudo o que seu veículo precisa em um só lugar, com diagnóstico preciso e orçamento transparente." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/servicos" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/servicos" },
     ],
   }),
   component: ServicosPage,

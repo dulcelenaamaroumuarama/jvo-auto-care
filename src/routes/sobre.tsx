@@ -7,11 +7,15 @@ import { Section, SectionHeader } from "@/components/site/Section";
 export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
-      { title: "Sobre — JVO Auto-Serviços" },
-      { name: "description", content: "Conheça a história do Glauko Rangel e da JVO Auto-Serviços, oficina familiar em Umuarama-PR." },
-      { property: "og:title", content: "Sobre — JVO Auto-Serviços" },
-      { property: "og:description", content: "25+ anos de experiência aplicados ao seu veículo." },
+      { title: "Sobre o Mecânico Glauko Rangel | JVO Auto-Serviços Umuarama" },
+      { name: "description", content: "Conheça Glauko Rangel, mecânico com 25+ anos de experiência em Umuarama-PR. História, valores e a oficina familiar JVO Auto-Serviços." },
+      { property: "og:title", content: "Sobre o Mecânico Glauko Rangel | JVO Auto-Serviços" },
+      { property: "og:description", content: "25+ anos de experiência em mecânica automotiva multimarcas, aplicados ao seu veículo." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/sobre" },
       { property: "og:image", content: glauko },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/sobre" },
     ],
   }),
   component: SobrePage,

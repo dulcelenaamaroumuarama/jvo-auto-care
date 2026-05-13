@@ -12,12 +12,16 @@ import { WHATSAPP_URL, TEL_URL, PHONE_DISPLAY } from "@/lib/contact";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "JVO Auto-Serviços — Oficina mecânica em Umuarama-PR" },
-      { name: "description", content: "Mecânica multimarcas em Umuarama-PR com 25+ anos de experiência. Agende pelo WhatsApp." },
-      { property: "og:title", content: "JVO Auto-Serviços — Oficina mecânica em Umuarama-PR" },
-      { property: "og:description", content: "Diagnóstico preciso, atendimento familiar e parcelamento em até 4x sem juros." },
+      { title: "Oficina Mecânica em Umuarama-PR | JVO Auto-Serviços" },
+      { name: "description", content: "Oficina mecânica e centro automotivo em Umuarama-PR. 25+ anos de experiência, diagnóstico preciso, orçamento transparente e parcelamento em até 4x sem juros." },
+      { property: "og:title", content: "Oficina Mecânica em Umuarama-PR | JVO Auto-Serviços" },
+      { property: "og:description", content: "Centro automotivo multimarcas com 25+ anos. Mecânica geral, freios, suspensão, injeção e leilão. Agende pelo WhatsApp." },
+      { property: "og:url", content: "https://jvo-care-connect.lovable.app/" },
       { property: "og:image", content: hero },
       { name: "twitter:image", content: hero },
+    ],
+    links: [
+      { rel: "canonical", href: "https://jvo-care-connect.lovable.app/" },
     ],
   }),
   component: HomePage,
