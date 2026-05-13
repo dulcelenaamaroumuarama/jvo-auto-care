@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock } from "lucide-react";
 import logo from "@/assets/logo-jvo.png";
 import { ADDRESS, HOURS, PHONE_DISPLAY, TEL_URL, MAP_EMBED } from "@/lib/contact";
+import { SocialCard } from "@/components/site/SocialCard";
 
 export function Footer() {
   return (
@@ -12,13 +13,8 @@ export function Footer() {
           <p className="text-sm text-brand-blue-foreground/80">
             25+ anos de mecânica multimarcas em Umuarama-PR. Diagnóstico preciso e atendimento familiar.
           </p>
-          <div className="mt-4 flex gap-3">
-            <a href="#" aria-label="Instagram" className="rounded-md bg-white/10 p-2 hover:bg-white/20">
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a href="#" aria-label="Facebook" className="rounded-md bg-white/10 p-2 hover:bg-white/20">
-              <Facebook className="h-5 w-5" />
-            </a>
+          <div className="mt-4">
+            <SocialCard />
           </div>
         </div>
 
