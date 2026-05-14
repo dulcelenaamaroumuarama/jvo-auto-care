@@ -127,7 +127,14 @@ function ContatoPage() {
             </div>
 
             <div className="overflow-hidden rounded-2xl border border-border">
-              <iframe src={MAP_EMBED} title="Mapa JVO" loading="lazy" className="h-72 w-full" />
+              <iframe
+                src={MAP_EMBED}
+                title="Mapa JVO"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+                className="h-72 w-full"
+              />
               <a href={MAP_LINK} target="_blank" rel="noreferrer noopener"
                 className="block bg-card px-4 py-3 text-center text-sm font-semibold text-brand-blue hover:bg-secondary">
                 Abrir no Google Maps
